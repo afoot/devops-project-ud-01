@@ -58,16 +58,16 @@ else
   echo "########################################"
   echo "Remove $PACKAGE service"
   echo "########################################"
-  sudo apt update
-  sudo apt purge $PACKAGE -y
-  sudo apt autoremove --purge -y
+  sudo apt-get update
+  sudo apt-get purge $PACKAGE -y
+  sudo apt-get autoremove --purge -y
   echo
   echo "########################################"
   echo "All cleaned, $PACKAGE uninstalled"
   echo "########################################"
   echo
   echo "########################################"
-  echo "Checking html folder"
+  echo "Checking html folder with ls"
   echo "########################################"
   ls $HTML_DIR
   echo

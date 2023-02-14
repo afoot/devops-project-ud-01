@@ -90,8 +90,8 @@ else
   echo "####################################"
   echo "Installing packages"
   echo "####################################"
-  sudo apt update
-  sudo apt install $PACKAGE -y > /dev/null # will be redirect to null if there are no errors
+  sudo apt-get update
+  sudo apt-get install $PACKAGE -y > /dev/null # will be redirect to null if there are no errors
   echo
 
   # Start & enable Service
