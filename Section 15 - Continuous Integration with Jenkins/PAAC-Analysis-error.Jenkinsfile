@@ -10,6 +10,11 @@ pipeline {
     }
     
     stages {
+        stage('Print error') {
+            steps {
+                sh 'fake comment'
+            }
+        }
         stage('Fetch code') {
             steps {
                 git branch: 'vp-rem', url: 'https://github.com/devopshydclub/vprofile-project.git'
