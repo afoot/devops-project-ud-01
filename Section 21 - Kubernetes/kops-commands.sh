@@ -9,6 +9,7 @@ kops create cluster \
   --node-volume-size=8 \
   --master-volume-size=8
 
+# pods not working with that cluster
 kops create cluster \
   --name=kubevpro.wandering-mono.top \
   --state=s3://vprofile-kops-state-mono \
