@@ -5,6 +5,9 @@ __pycache__/
 # vagrant
 .vagrant/
 
+# terraform
+.terraform/
+
 # nodejs
 node_modules/
 
